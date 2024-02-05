@@ -101,6 +101,9 @@ fun ExpertInfo()
                 Text(Strings.aboutUs)
             }
 
+            CheckboxComponent()
+
+            DropdownComponent()
 
         }
 

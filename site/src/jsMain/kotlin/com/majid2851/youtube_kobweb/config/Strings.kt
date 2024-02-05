@@ -1,6 +1,7 @@
 package com.majid2851.youtube_kobweb.config
 
 object Strings{
+    val checkMe: String="Check Me"
     val themeselvesMerchant: String="Themselves in the merchant's"
     val technicalSkillsDesign: String="Technical skills, design, business"
     val readMore: String="Read More"
