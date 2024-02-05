@@ -1,25 +1,48 @@
 package com.majid2851.youtube_kobweb.pages
 
-import androidx.compose.runtime.*
-import com.varabyte.kobweb.compose.foundation.layout.Box
+import androidx.compose.runtime.Composable
+import com.majid2851.youtube_kobweb.components.home.home_content.HomeContent
+import com.majid2851.youtube_kobweb.components.home.home_header.HeaderContent
+import com.majid2851.youtube_kobweb.components.home.home_header.HomeHeader
+import com.majid2851.youtube_kobweb.config.WebColors
+import com.varabyte.kobweb.compose.foundation.layout.Arrangement
+import com.varabyte.kobweb.compose.foundation.layout.Column
 import com.varabyte.kobweb.compose.ui.Alignment
 import com.varabyte.kobweb.compose.ui.Modifier
+import com.varabyte.kobweb.compose.ui.modifiers.background
+import com.varabyte.kobweb.compose.ui.modifiers.fillMaxHeight
 import com.varabyte.kobweb.compose.ui.modifiers.fillMaxSize
+import com.varabyte.kobweb.compose.ui.modifiers.fillMaxWidth
 import com.varabyte.kobweb.core.Page
-import org.jetbrains.compose.web.dom.Text
-import com.varabyte.kobweb.worker.rememberWorker
-import com.majid2851.youtube_kobweb.worker.EchoWorker
 
 @Page
 @Composable
-fun HomePage() {
-    val worker = rememberWorker { EchoWorker { output -> console.log("Echoed: $output") } }
-    LaunchedEffect(Unit) {
-        worker.postInput("Hello, worker!")
+fun HomePage()
+{
+
+    Column(
+        modifier = Modifier.fillMaxSize(),
+        verticalArrangement = Arrangement.Center,
+        horizontalAlignment = Alignment.CenterHorizontally
+    ) {
+
+        Column(
+            modifier = Modifier.fillMaxWidth().fillMaxHeight()
+                .background(color = WebColors.heatherBackground)
+        )
+        {
+
+            HomeHeader()
+
+            HeaderContent()
+
+            HomeContent()
+
+        }
+
+
+
     }
 
-    // TODO: Replace the following with your own content
-    Box(Modifier.fillMaxSize(), contentAlignment = Alignment.Center) {
-        Text("THIS PAGE INTENTIONALLY LEFT BLANK")
-    }
 }
+
