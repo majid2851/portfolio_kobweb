@@ -1,13 +1,25 @@
 package com.majid2851.youtube_kobweb.config
 
 object Strings{
+    val age: String="Age"
+    val aboutMyCarear: String="As as a highly motivated android developer," +
+            " I have 5 years of experience in java, kotlin and flutter at\n" +
+            "Ostova, Ponisha and Bitfinity industries .\n" +
+            "I have acquired and applied the essential skills required for" +
+            " a senior android developer.\n" +
+            "My passion lies in programming, mental exercise like playing" +
+            " chess, collaborating with companies\n" +
+            "and crafting impactful APKs that enhance people's lives.\n" +
+            "I am actively seeking a full-time remote position to contribute" +
+            " my expertise and elevate android app\n" +
+            "development for my employer.\n"
+    val carear: String="Proffesional Kotlin Developer"
     val checkMe: String="Check Me"
     val themeselvesMerchant: String="Themselves in the merchant's"
     val technicalSkillsDesign: String="Technical skills, design, business"
     val readMore: String="Read More"
-    val featureSectionDesc="Technical skills, " +
-            "design, business understanding, " +
-            "ability to put themselves in the merchant's shoes."
+    val featureSectionDesc="Android Developers with more than 5 years " +
+            "experience in Java,Kotlin and Flutter."
     val makeProjectMore: String="Making Your Projects Look Awesome"
     val projectsComplete: String="Projects complete"
     val agencyNumbers: String="Agency members"

@@ -9,6 +9,7 @@ object WebColors
     val heatherBackground= Color("#18293E")
     val heatherContentBackground= Color("#28293E")
     val white=Color("#FFFFFF")
+    val gray=Color("#10FFFF")
     val light=Color("#FDF0E9")
     val light2=Color("#F3D1BF")
 

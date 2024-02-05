@@ -1,4 +1,4 @@
-package com.majid2851.youtube_kobweb.components.home.home_header
+package com.majid2851.youtube_kobweb.components
 
 import androidx.compose.runtime.Composable
 import androidx.compose.web.events.SyntheticMouseEvent
@@ -10,10 +10,9 @@ import com.varabyte.kobweb.compose.ui.Modifier
 import com.varabyte.kobweb.compose.ui.modifiers.*
 import org.jetbrains.compose.web.css.*
 import org.jetbrains.compose.web.dom.*
-import org.w3c.dom.Navigator
 
 @Composable
-fun HomeHeader()
+fun MainHeader()
 {
     Row(
         modifier = Modifier.fillMaxWidth().
@@ -57,11 +56,9 @@ private fun NavLink(
                 fontSize(1.25.em)
                 cursor("pointer")
                 property("text-decoration", "none")
-
             }
             onClick{event->
                 onClick(event)
-
             }
         }
     ) {
